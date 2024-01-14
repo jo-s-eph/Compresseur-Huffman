@@ -25,5 +25,5 @@ Problèmes à fix :
 - (!!) Memory leak en utilisant gcc pour compiler et non clang.
 - (!!) Lors de la décompression, des caractères sont rajoutés au texte d'origine (Comblage d'octets).
 - Prend en charge que les 128 caractères ASCII donc pas d'accents, de lettres grecques etc..
-- Optimisations possibles sur la gestion de mëmoire.
+- Optimisations possibles sur la gestion de mémoire.
 - Utiliser des args plutôt qu'un menu (Ex : "./main.o -C test1.txt" Pour compresser le fichier)
