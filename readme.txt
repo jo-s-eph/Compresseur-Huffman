@@ -22,7 +22,8 @@ Après compilation, le fichier qui en résulte prend le nom suivant : [NOM].b
 Après décompilation, le fichier qui en résulteprend le nom suivant : r_[NOM].txt
 
 Problèmes à fix :
-- Memory leak en utilisant gcc pour compiler et non clang.
+- (!!) Memory leak en utilisant gcc pour compiler et non clang.
+- (!!) Lors de la décompression, des caractères sont rajoutés au texte d'origine (Comblage d'octets).
 - Prend en charge que les 128 caractères ASCII donc pas d'accents, de lettres grecques etc..
 - Optimisations possibles sur la gestion de mëmoire.
 - Utiliser des args plutôt qu'un menu (Ex : "./main.o -C test1.txt" Pour compresser le fichier)
