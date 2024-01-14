@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -Wextra -std=c11 -fsanitize=address -g
 CFILES= main
-FILENAME= Projet_MAOUCHE
+FILENAME= Huffman_Joseph
 
 all: $(CFILES)
 
@@ -11,7 +11,7 @@ main: $(CFILES).c
 
 zip:
 	mkdir $(FILENAME)
-	cp *.c *.h Makefile readme.txt small.txt big.txt result.txt $(FILENAME)
+	cp *.c *.h *.txt Makefile $(FILENAME)
 	tar -zcvf $(FILENAME).tar.gz $(FILENAME)
 	rm -rf $(FILENAME)
 

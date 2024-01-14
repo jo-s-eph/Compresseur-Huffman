@@ -74,13 +74,12 @@ Retourne un tableau d'occurence de chaque case i qui contient le nombre d'occure
 de (char)i. 
 */ 
 
-int* tab_occurences(char *texte){
-    int* ascii_tab = malloc(128 * sizeof(int));
+void tab_occurences(char *texte, int ascii_tab[128]){
     for (int i = 0; i < 128; i++) ascii_tab[i] = 0;
 
     for (int i = 0; texte[i] != '\0'; i++)
         ascii_tab[(int)texte[i]]++;
-    return ascii_tab;
+    // return ascii_tab;
 }
 
 /*

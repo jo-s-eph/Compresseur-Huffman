@@ -24,7 +24,8 @@ void user_compresser(){
 
     printf("- Création de la table d'occurences...\n");
     int* ascii_o = malloc(128 * sizeof(int));
-    ascii_o = tab_occurences(contenuFichier);
+    tab_occurences(contenuFichier,ascii_o);
+    // ascii_o = tab_occurences(contenuFichier);
 
     printf("- Création de l'arbre de HuffMan...\n");
     tas_t* forets = creerforets(ascii_o);

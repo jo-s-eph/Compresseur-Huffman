@@ -19,7 +19,7 @@ long getFileSize(const char *nom);
 char* getFileName(const char *nom);
 
 // Retourne un tableau d'occur. de chaque case i qui contient le nb. d'occur. de (char)i.
-int* tab_occurences(char *texte);
+void tab_occurences(char *texte, int ascii_tab[128]);
 
 // Retourne le nombre de cases non-vides dans un tableau de 128 entiers.
 int nb_char_unique(int ascii_o[128]);
