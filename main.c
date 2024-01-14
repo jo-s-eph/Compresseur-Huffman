@@ -38,7 +38,7 @@ void user_compresser(){
     printf("- Encodage du texte...\n\n");
 
     char* nvNomFichier = getFileName(nomFichier);
-    strcat(nvNomFichier,".o");
+    strcat(nvNomFichier,".b");
     
     exportArbre(nvNomFichier,a_de_huffman);
     exportTexte(a_de_huffman,tableHuffman,contenuFichier,nvNomFichier);

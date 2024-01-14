@@ -16,4 +16,4 @@ zip:
 	rm -rf $(FILENAME)
 
 clean:
-	rm -f *.o $(FILENAME).tar.gz
+	rm -f *.b *.o $(FILENAME).tar.gz
